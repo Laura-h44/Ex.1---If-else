@@ -1,6 +1,8 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(0)
+  background(0);
+  noStroke();
+  
 }
 
 function draw() {
@@ -27,7 +29,7 @@ function draw() {
  else if (mouseX < (width / 15) * 7) {
   background(120, 120, 120);
  }
- else if (mouseX < (width / 15) * 5) {
+ else if (mouseX < (width / 15) * 8) {
   background( 140, 140, 140);
  }
  else if (mouseX < (width / 15) * 9) {
@@ -52,6 +54,5 @@ function draw() {
   background(255, 255, 255);
  }
 
- strokeWeight(random(2, 20));
-  circle(width/2, height/2, height/4);
+
 }
